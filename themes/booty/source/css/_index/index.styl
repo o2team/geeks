@@ -1,0 +1,45 @@
+@import "post"
+
+$brandH = 150px
+$brandOffsetTop = - ($brandH/2)
+
+.home-hd, .home-bd
+    position: relative
+    width: 100%
+    height: 38.2%
+    text-align: center
+
+.home-hd
+    background-color: #23232e
+    +mobile()
+        height: 200px
+.home-bd
+    height: 61.8%
+    +mobile()
+        height: auto
+
+.brand
+    height: $brandH
+    transform: translateY($brandOffsetTop)
+    &-logo
+        img
+            width: $brandH
+            height: $brandH
+            padding: 2px
+            background: #000
+            border-radius: 50%
+
+.evt
+    margin-top: $brandOffsetTop
+    &-title
+        font-size: 26px
+    &-subtitle
+        padding-left: 10px
+        padding-right: 10px
+    &-list
+        transition: all .25s ease-out
+        border-top: 1px solid $color-bd-lite
+        padding: 15px 0 0 0
+        margin: .8em 0
+    &-btn
+        margin-top: .8em
