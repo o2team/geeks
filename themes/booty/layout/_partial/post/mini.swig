@@ -9,4 +9,12 @@
             <p class="post-desc" itemprop="about">{{ post.subtitle }}</p>
         </div>
     </a>
+    <div class="post-acts grid-2cols">
+        <div class="grid-col">
+            <a class="btn btn-black post-btn" href="{{post.yylive}}" title="{{post.title}}">&xrarr;&nbsp;YY直播</a>
+        </div>
+        <div class="grid-col">
+            <a class="btn btn-greyline post-btn" href="{{ url_for(post.path) }}" title="{{post.title}}">了解详情&nbsp;&xrarr;</a>
+        </div>
+    </div>
 </article>

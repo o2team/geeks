@@ -2,8 +2,9 @@ season: 1
 title: 首届凹凸有致Web开发技术交流分享会
 shorttitle: 凹凸有致Web技术交流会
 subtitle: "2016年8月25日，凹凸实验室将联袂腾讯CDG通彩前端体验组为大家带来首届凹凸有致Web开发技术交流分享会。"
-cover: //img.aotu.io/mamboer/post-aotu.jpg
+cover: //misc.aotu.io/mamboer/2016/evt-s1-bg.jpg
 logo: http://icons.iconarchive.com/icons/xaml-icon-studio/agriculture/256/Sunflower-icon.png
+yylive: http://www.yy.com/u/1759670940
 date: 2016-08-14 10:24:35
 categories: 分享会
 tags:

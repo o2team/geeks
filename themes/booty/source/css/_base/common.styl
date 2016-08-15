@@ -63,12 +63,11 @@ a
     white-space: nowrap
     line-height: 1.428571429
     user-select: none
-    min-width: 170px
     height: 45px
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
-    padding: 11px 0
+    padding: 11px 10px
     border-radius: 0
     text-decoration: none
     transition: all .3s ease-in-out
@@ -118,3 +117,15 @@ a
             border: 1px solid $color-btn-bg-lite
             color: $color-btn-text
             background-color: $color-btn-bg-lite
+
+.grid
+    &-col
+        float: left
+    &-2cols
+        clearfix()
+        .grid-col
+            width: 50%
+            &:nth-child(1)
+              padding-right: 0.5em
+            &:nth-child(2)
+              padding-left: 0.5em

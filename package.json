@@ -15,7 +15,7 @@
     "fs-extra": "^0.30.0",
     "hexo": "^3.2.2",
     "hexo-deployer-git": "0.2.0",
-    "hexo-filter-cleanup": "github:mamboer/hexo-filter-cleanup",
+    "hexo-filter-cleanup": "^1.0.5",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-baidu-sitemap": "mamboer/hexo-generator-baidu-sitemap",
     "hexo-generator-category": "^0.1.3",

@@ -17,7 +17,6 @@
                 {% for post in page.posts %}
                 {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
                 {% include '../post/mini.swig' with {post:post, author:author} %}
-                <a class="btn btn-greyline evt-btn" href="{{ url_for(post.path) }}" title="{{post.title}}">了解详情&nbsp;&rarrb;</a>
                 {% endfor%}
             </div>
         </div>
