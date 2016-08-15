@@ -11,7 +11,7 @@
         <div class="evt" id="evt">
             <div class="evt-header ani">
                 <h1 class="evt-title">『凹凸有致』- Open Oriented</h1>
-                <p class="evt-subtitle">by <a href="//aotu.io">&aopf;&oopf;&topf;&uopf;.&iopf;&oopf;</a>, for building the web.</p>
+                <p class="evt-subtitle">by <a href="//aotu.io">AOTU.IO</a>, for building the web.</p>
             </div>
             <div id="evtList" class="evt-list ani">
                 {% for post in page.posts %}
