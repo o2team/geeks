@@ -25,7 +25,7 @@ script:
 
 branches:
   only:
-    - v2
+    - master
 
 env:
   global:
