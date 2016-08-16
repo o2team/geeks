@@ -129,3 +129,27 @@ a
               padding-right: 0.5em
             &:nth-child(2)
               padding-left: 0.5em
+
+.blockquote-em
+    position: relative
+    font-size: 20px
+    display: inline-block
+    padding: 10px 40px
+    line-height: 30px
+    color: $color-default
+    border-left: none
+    &:before, &:after
+        position: absolute
+        width: 30px
+        height: 30px
+        font-size: 60px
+        line-height: 1
+        color: $color-bd
+    &:before
+        top: 0
+        left: 0
+        content: "\201C"
+    &:after
+        top: 0
+        right: 0
+        content: "\201D"

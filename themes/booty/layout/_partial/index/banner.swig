@@ -3,15 +3,16 @@
     <div class="home-hd"></div>
     <div class="home-bd">
         <div class="brand">
-            <div class="ani brand-logo" id="brandLogo">
-                <img src="img/logo.png" alt="凹凸有致Web开发技术交流分享会">
+            <div class="brand-logo" id="brandLogo">
+                <img src="img/logo.png" alt="{{config.fulltitle}}">
             </div>
         </div>
 
         <div class="evt" id="evt">
             <div class="evt-header ani">
-                <h1 class="evt-title">『凹凸有致』- Open Oriented</h1>
-                <p class="evt-subtitle">by <a href="//aotu.io">AOTU.IO</a>, for building the web.</p>
+                <h1 class="evt-title">{{config.fulltitle}}</h1>
+                <blockquote class="blockquote-em">{{config.slogan}}</blockquote>
+                <p class="evt-subtitle">{{config.subtitle_desc}}</p>
             </div>
             <div id="evtList" class="evt-list ani">
                 {% for post in page.posts %}

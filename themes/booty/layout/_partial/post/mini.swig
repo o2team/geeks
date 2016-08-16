@@ -1,5 +1,5 @@
 <article class="post" itemscope itemtype="http://schema.org/Article">
-    <a href="{{ url_for(post.path) }}" itemprop="url" title="{{ post.title }}">
+    <a href="{{ url_for(post.path) }}" itemprop="url" title="{{ post.title }}" class="post-main">
         <div class="post-cover" itemscope itemtype="http://schema.org/ImageObject">
             <img src="{{ post.cover }}" alt="{{ post.title }}" itemprop="contentUrl"/>
             <span class="post-ovl"></span>
