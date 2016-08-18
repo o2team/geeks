@@ -14,6 +14,7 @@
                 <div class="deco" data-icon=""><img src="{{post.logo}}" alt="凹凸有致"/></div>
                 <h2>{{post.shorttitle}}</h2>
                 <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
+                <a href="/" title="Back to Home" class="sl-back-btn"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
             </div>
         </div>
 

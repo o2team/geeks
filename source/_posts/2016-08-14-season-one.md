@@ -3,7 +3,7 @@ title: SEASON 1 - 凹凸有致&middot;极客沙龙
 shorttitle: 凹凸有致 - Geek Talks
 subtitle: "2016年8月25日，深圳。这是凹凸实验室联袂腾讯CDG通彩前端体验组举办的首季『凹凸有致&middot;极客沙龙』，主题是『存储、表现与工作流』。"
 cover: //misc.aotu.io/mamboer/2016/evt-s1-bg.jpg
-logo: http://icons.iconarchive.com/icons/xaml-icon-studio/agriculture/256/Sunflower-icon.png
+logo: /img/logo.png
 yylive: http://www.yy.com/u/1759670940
 date: 2016-08-14 10:24:35
 categories: 分享会

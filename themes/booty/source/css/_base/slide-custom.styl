@@ -498,6 +498,30 @@
 .sl-trans-back-elems .ani-fade,.sl-trans-back-elems blockquote{
     animation: ani-fadeOut 1s linear both;
 }
+
+.sl-back
+    margin: 0.25em
+    padding: 0.25em
+    position: absolute
+    top: 0.8em
+    left: 0.8em
+    &:after
+        content: ''
+        position: absolute
+        top: 10%
+        left: 50%
+        width: 1px
+        height: 80%
+        opacity: 0.2
+        background: currentColor
+        transform: rotate3d(0, 0, 1, 22.5deg)
+    &-btn
+        color: #ffeb3b
+        outline: none
+        width: 1.5em
+        height: 1.5em
+        display: inline-block
+
 @keyframes ani-roll{
     0% {transform: translateX(500px) rotate(360deg); opacity: 0;}
     100% {transform: translateX(0px) rotate(0deg); opacity: 1;}
