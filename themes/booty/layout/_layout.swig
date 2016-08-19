@@ -6,7 +6,7 @@
     {{partial('_partial/common/head')}}
 </head>
 <body class="{% block page_class %}{% endblock %}">
-
+    {% block prebody %}{% endblock %}
     <div class="wrapper">
 
     {% block header %}{% endblock %}

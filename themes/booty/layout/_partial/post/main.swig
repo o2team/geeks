@@ -13,8 +13,13 @@
             <div class="sl-slide-inner">
                 <div class="deco" data-icon=""><img src="{{post.logo}}" alt="凹凸有致"/></div>
                 <h2>{{post.shorttitle}}</h2>
-                <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
-                <a href="/" title="Back to Home" class="sl-back-btn"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite class="cl-effect-circle"><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
+                <div class="c-flex sl-back">
+                    <a href="/" title="Back to up.aotu.io" class="sl-back-btn">
+                        <svg class="sl-icon sl-icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg>
+                    </a>
+                    <a href="//aotu.io" title="Back to aotu.io" class="sl-back-btn"><img src="{{url_for('img/logo-o2.png')}}" alt="aotu.io"/></a>
+                </div>
             </div>
         </div>
 
