@@ -13,10 +13,10 @@ fullscreen($zindex = 1) {
   z-index: $zindex
 }
 
-vhc-wrap() {
+vhc-wrap($jc = center) {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: $jc;
 }
 
 mobile() {
@@ -24,11 +24,26 @@ mobile() {
     {block}
   }
 }
-
+mobile-up() {
+  @media (min-width: 481px) {
+    {block}
+  }
+}
+tablet-down() {
+  @media (max-width: 767px) {
+    {block}
+  }
+}
 tablet() {
    @media (min-width: 768px) and (max-width: 991px) {
      {block}
    }
+}
+
+tablet-up() {
+  @media (min-width: 768px) {
+    {block}
+  }
 }
 
 desktop() {
@@ -43,13 +58,13 @@ desktop-up() {
   }
 }
 
-desktop-large() {
+desktop-large-up() {
   @media (min-width: 1200px) {
     {block}
   }
 }
 
-desktop-xlarge() {
+desktop-xlarge-up() {
   @media (min-width: 1600px) {
     {block}
   }

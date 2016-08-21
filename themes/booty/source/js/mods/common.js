@@ -19,6 +19,7 @@
         destroy: function() {
             var $dom = $("#loader").delay(500).fadeOut('slow', function() {
                 $dom.remove();
+                App.$win.trigger('loaderGone');
             });
         }
     };
@@ -26,12 +27,12 @@
     App.$win.on('resize', function() {
         onResize();
         App.$win.trigger('siteResized');
-    });
-
-    App.$win.on('load', function() {
+    }).on('load', function() {
         onResize();
         loader.destroy();
         App.$win.trigger('siteLoaded');
+    }).on('loaderGone', function() {
+        App.$htmlBody.removeClass('ovf-hidden');
     });
 
     onResize();

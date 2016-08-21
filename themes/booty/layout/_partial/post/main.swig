@@ -11,9 +11,11 @@
         
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-45" data-slice2-rotation="-10" data-slice1-scale="1.5" data-slice2-scale="1">
             <div class="sl-slide-inner">
-                <div class="deco" data-icon=""><img src="{{post.logo}}" alt="凹凸有致"/></div>
-                <h2>{{post.shorttitle}}</h2>
-                <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite class="cl-effect-circle"><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
+                <div class="ecard">
+                    <div class="deco" data-icon=""><img src="{{post.logo}}" alt="凹凸有致"/></div>
+                    <h2>{{post.shorttitle}}</h2>
+                    <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite class="cl-effect-circle"><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
+                </div>
                 <div class="c-flex sl-back">
                     <a href="/" title="Back to up.aotu.io" class="sl-back-btn">
                         <svg class="sl-icon sl-icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg>
@@ -33,10 +35,13 @@
                         <div class="album-grid">
                             <div class="album-grid-bd">
                                 <div class="album-item">
-                                    <img class="album-img v-center" src="{{slide.avatar}}" alt="{{slide.author}}"/>                  
+                                    <img class="album-img" src="{{slide.avatar}}" alt="{{slide.author}}"/>                  
                                 </div>
                                 <div class="album-tit">
-                                    <h3 class="album-tit-bd v-center"><span class="album-author">{{slide.author}}</span><span class="album-tit-text">{{slide.title}}</span></h3>
+                                    <div class="album-tit-bd">
+                                        <div class="album-tit-text">[&nbsp;{{slide.title}}&nbsp;]</div>
+                                        <div class="album-author">{{slide.author}}&nbsp;&nbsp;<span class="album-comp">({{slide.company}})</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -55,13 +60,17 @@
             data-slice1-scale="{{slide.slice1.scale}}"
             data-slice2-scale="{{slide.slice2.scale}}">
             <div class="sl-slide-inner">
-                {% if slide.ficon %}
-                <div class="deco" data-ficon="&{{slide.ficon}}"></div>
-                {% else %}
-                <div class="deco"><img src="{{slide.avatar}}" alt="{{slide.author}}"/></div>
-                {% endif %}
-                <h2>{{slide.title}}</h2>
-                <blockquote><p>{{slide.desc}}</p><cite>{{slide.author}}</cite></blockquote>
+                <div class="ecard">
+                    {% if slide.ficon %}
+                    <div class="deco" data-ficon="&{{slide.ficon}}"></div>
+                    {% else %}
+                    <div class="deco"><img src="{{slide.avatar}}" alt="{{slide.author}}"/></div>
+                    {% endif %}
+                    {% if slide.title %}
+                    <h2>{{slide.title}}</h2>
+                    {% endif %}
+                    <blockquote><p>{{slide.desc}}</p><cite><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{slide.author}} <i class="fa fa-heart" aria-hidden="true"></i> with {{slide.company}}</cite></blockquote>
+                </div>
             </div>
         </div>
         {% endfor %}
@@ -74,8 +83,10 @@
     </nav>
 
     <nav id="nav-dots" class="nav-dots">
+        <span class="nav-dot-current"></span>
+        <span></span>
         {% for slide in post.slides %}
-        <span{% if loop.first %} class="nav-dot-current"{% endif %}></span>
+        <span></span>
         {% endfor %}
     </nav>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="theme-{{config.theme}}">
+<html class="ovf-hidden theme-{{config.theme}}">
 <head>
     <meta charset="utf-8"/>
     <title>{% block title %}{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}「{{ config.subtitle }}」{% endblock %}</title>

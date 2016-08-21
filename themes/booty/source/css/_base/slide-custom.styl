@@ -1,7 +1,19 @@
 $sl-color-default := #8b8b8b
 $sl-color-strong := #ffffff
-/* Custom navigation arrows */
 
+.slideshow
+    .sl-slider-wrapper
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    a
+        color: $sl-color-default
+        padding: 2px 0 3px
+        border-bottom: 1px dotted darken($sl-color-default, 50%)
+
+/* Custom navigation arrows */
 .nav-arrows
     span
         position: absolute
@@ -10,24 +22,23 @@ $sl-color-strong := #ffffff
         width: 40px
         height: 40px
         overflow:hidden
-        border: 6px solid #ddd
-        border: 6px solid rgba(150,150,150,0.3)
+        border: 6px solid rgba(150,150,150,0.2)
         text-indent: -90000px
         margin-top: -40px
         cursor: pointer
         transform: rotate(45deg)
         &:hover
-            border-color: rgba(150,150,150,0.5)
-
+            border-color: rgba(150,150,150,0.3)
         &.nav-arrow-prev
             left: 5%
             border-right: none
             border-top: none
-
         &.nav-arrow-next
             right: 5%
             border-left: none
             border-bottom: none
+    +tablet-down()
+        display: none
 
 .touch .nav-arrows
     display:none  
@@ -49,7 +60,7 @@ $sl-color-strong := #ffffff
         box-flex:1
         position: relative
         height: 2px
-        background: rgba(150,150,150,0.4)
+        background: rgba(150,150,150,0.6)
         width:100% /* we need this fix bugs on mobile browsers */
         cursor: pointer
         box-shadow: 0 1px 1px rgba(255,255,255,0.4), inset 0 1px 1px rgba(0,0,0,0.1)
@@ -58,7 +69,7 @@ $sl-color-strong := #ffffff
             box-shadow:none
 
 /* Content elements */
-.c-flex{
+.c-flex {
     display: flex;
     /* Then we define the flow direction and if we allow the items to wrap 
     * Remember this is the same as:
@@ -109,30 +120,38 @@ $sl-color-strong := #ffffff
         padding:5px 10px
         position:relative
         overflow:hidden
+        cursor: pointer
+        transition: all .3s ease-out
         &:nth-child(odd)
             background:#fff
         &:nth-child(even)
             background:#eee
+        &:hover
+            background: #43434e
+            .album-tit-bd
+                color: #fff
         &-bd
+            display: flex
             position:relative
             width:100%
             height:100%
             margin:0 auto
-            &:before, &:after
-                content: "\20"
-                display: table
-            &:after
-                clear: both
+            +tablet-up()
+                width: 75%
     &-item
         text-align:center
         position:relative
-        height:100%
-        max-height:100%
+        height: 94%
+        max-height: 94%
+        top: 3%
+        vhc-wrap()
+        +tablet-up()
+            margin-right: 15px
     &-tit
-        position:absolute
-        right:5px
-        bottom:0
-        height:100%
+        flex: 1
+        vhc-wrap(flex-end)
+        +tablet-up()
+            height: 100%
         &-bd
             color: #333
             border-color: #000
@@ -145,10 +164,20 @@ $sl-color-strong := #ffffff
             em
                 font-style:normal
                 color:red
+            +mobile-up()
+                font-size: 1.3em
+            +desktop-up()
+                font-size: 1.6em
+                padding: 0.2em 0.3em
+            +desktop-xlarge-up()
+                font-size: 1.8em
+        &-text
+            margin-bottom: 8px
     &-author
-        font-size: 90%
-        display:block
-        margin-bottom: 5px
+        font-size: 88%
+        color: $color-default
+    &-comp
+        color: $color-grey
     &-img
         vertical-align:top
         display:block
@@ -159,74 +188,11 @@ $sl-color-strong := #ffffff
         border-radius:50%
         max-width: 160px
         max-height: 160px
-
-.slideshow
-    .sl-slider-wrapper
-        position: absolute
-        width: 100%
-        height: 100%
-        top: 0
-        left: 0
-    a
-        color: $sl-color-default
-        padding: 2px 0 3px
-        border-bottom: 1px dotted darken($sl-color-default, 50%)
-    .deco
-        width: 260px
-        height: 260px
-        border: 2px dashed rgba(150,150,150,0.4)
-        border-radius: 50%
-        position: absolute
-        bottom: 50%
-        left: 50%
-        margin: 0 0 0 -130px
-        line-height: 260px
-        text-align: center
-        text-transform: uppercase
-        font-size: 2.1em
-        font-weight: normal
-        color: #fff
-        text-shadow: 0px 0px 2px #666
-        img
-            position:absolute
-            width:210px
-            height:210px
-            border-radius:50%
-            top:50%
-            left:50%
-            margin:-105px 0 0 -105px
-    [data-icon]:after
-        content: attr(data-icon)
-        font-family: 'AnimalsNormal'
-        color: #999
-        text-shadow: 0 0 1px #999
-        position: absolute
-        width: 220px
-        height: 220px
-        line-height: 220px
-        text-align: center
-        font-size: 100px
-        top: 50%
-        left: 50%
-        margin: -110px 0 0 -110px
-        box-shadow: inset 0 0 0 10px #f7f7f7
-        border-radius: 50%
-    [data-ficon]:after
-        content: attr(data-ficon)
-        font-family:'fontello'
-        color: #999
-        text-shadow: 0 0 1px #999
-        position: absolute
-        width: 220px
-        height: 220px
-        line-height: 220px
-        text-align: center
-        font-size: 100px
-        top: 50%
-        left: 50%
-        margin: -110px 0 0 -110px
-        box-shadow: inset 0 0 0 10px #f7f7f7
-        border-radius: 50%
+    &-desc
+        +mobile-up()
+            font-size: 1.0em
+        +desktop-xlarge-up()
+                font-size: 1.2em 
 
 .sl-icon
     display: block
@@ -235,106 +201,178 @@ $sl-color-strong := #ffffff
     margin: 0 auto
     fill: currentColor
 
-.sl-slide
+.ecard
+    position: relative
+    text-align: center
+    width: 80%
+    +mobile()
+        width: 95%
+    .deco
+        position: relative
+        width: 260px
+        height: 260px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 30px
+        border: 2px dashed rgba(150,150,150,0.4)
+        border-radius: 50%
+        line-height: 260px
+        text-align: center
+        text-transform: uppercase
+        font-size: 2.1em
+        font-weight: normal
+        color: #fff
+        text-shadow: 0px 0px 2px #666
+        +tablet-down()
+            width: 150px
+            height: 150px
+            line-height:150px
+            font-size:1.4em
+        img
+            vertical-align: top
+            margin-top: 25px
+            width:210px
+            height:210px
+            border-radius:50%
+            +tablet-down()
+                width:110px
+                height:110px
+                margin-top: 20px
+    [data-icon]:after
+        content: attr(data-icon)
+        font-family: 'AnimalsNormal'
+    [data-ficon]:after
+        content: attr(data-ficon)
+        font-family:'fontello'
+    [data-icon]:after, [data-ficon]:after
+        color: #999
+        text-shadow: 0 0 1px #999
+        position: absolute
+        width: 220px
+        height: 220px
+        line-height: 220px
+        text-align: center
+        font-size: 100px
+        top: 50%
+        left: 50%
+        margin: -110px 0 0 -110px
+        box-shadow: inset 0 0 0 10px #f7f7f7
+        border-radius: 50%
+        +tablet-down()
+            width: 130px
+            height: 130px
+            line-height: 130px
+            font-size: 45px
+            margin: -65px 0 0 -65px
     h2
         color: $sl-color-strong
         padding: 20px
-        position: absolute
         font-size: 34px
         font-weight: 500
         letter-spacing: 12px
         text-transform: uppercase
-        width: 80%
-        left: 10%
         text-align: center
         line-height: 50px
-        bottom: 50%
-        margin: 0 0 -120px 0
-
+        margin: 0
+        +tablet-down()
+            line-height: 22px
+            font-size: 18px
+            letter-spacing: 8px
     blockquote
-        position: absolute
-        width: 100%
         text-align: center
-        left: 0
         font-weight: 400
         font-size: 16px
         line-height: 20px
-        height: 70px
         color: $sl-color-default
         z-index: 2
-        bottom: 50%
-        margin: 0 0 -200px 0
+        margin: 10px 0 0 0
         padding: 0
         border:none
+        +tablet-down()
+            font-size:14px
         cite
-            font-size: 14px
+            font-size: 16px
             padding-top: 15px
             display: inline-block
             font-style: normal
             text-transform: uppercase
             letter-spacing: 4px
-        p,.quote-inner
+            +tablet-down()
+                font-size: 14px
+        p, .quote-inner
             margin: 0 auto
-            width: 65%
-            max-width: 600px
+            width: 70%
+            max-width: 700px
             line-height: 1.4
             position: relative
             text-align:left
+            +tablet-down()
+                width: 90%
         p:before, p:after
-            color: #f0f0f0
-            color: rgba(244,244,244,0.4)
+            color: rgba(244,244,244,0.2)
             font-family: "Bookman Old Style", Bookman, Garamond, serif
             position: absolute
             line-height: 60px
             width: 75px
             height: 75px
             font-size: 200px
-            z-index: -1
+            z-index: 0
             left: -90px
             top: 35px
             content: '\201C'
-    &.bg-light
+            +tablet-down()
+                line-height: 40px
+                width: 40px
+                height: 40px
+                font-size: 60px
+                left: -40px
+                top: 5px
+            +mobile()
+                line-height: 30px
+                width: 30px
+                height: 30px
+                font-size: 40px
+                left: -20px
+                top: 3px
+        p:after
+            left:auto
+            right:-85px
+            top:-70px
+            transform:rotate(180deg)
+            +tablet-down()
+                left:auto
+                right:-40px
+                top:-24px
+            +mobile()
+                left:auto
+                right: -20px
+                top:-15px
+    .fa-heart
+        color: #db84ad
+    &-light, .bg-light &
         blockquote
             p:before, p:after
                 color:rgba(244,244,244,0.8) !important
-            p:after
-                left:auto
-                right:-85px
-                top:-70px
-                transform:rotate(180deg)
+        h2
+            color: $color-default
 
 /* Custom background colors for slides in first demo */
 
 /* First Slide */
-.sl-slide-1
+.sl-slide-1, .sl-slide-3, .sl-slide-5
     .sl-slide-inner, .sl-content-slice
         background: #fff
+    .ecard
+        @extend .ecard-light
 
 /* Second Slide */
 .sl-slide-2 
     .sl-slide-inner, .sl-content-slice
-        background: #000
+        background: #12121e
     [data-icon]:after, h2 
         color: #fff
     blockquote:before
         color: #222
-
-/* Third Slide */
-.sl-slide-3
-    .sl-slide-inner, .sl-content-slice
-        background: #db84ad
-    .deco
-        border-color: #fff
-        border-color: rgba(255,255,255,0.5)
-    [data-icon]:after
-        color: #fff
-        text-shadow: 0 0 1px #fff
-        box-shadow: inset 0 0 0 10px #b55381
-    h2, blockquote
-        color: #fff
-        text-shadow: 0px 1px 1px rgba(0,0,0,0.3)
-    blockquote:before
-        color: #c46c96
 
 /* Forth Slide */
 .sl-slide-4
@@ -348,39 +386,9 @@ $sl-color-strong := #ffffff
     h2, blockquote
         color: #fff
         text-shadow: 1px 1px 1px rgba(0,0,0,0.2)
-    blockquote:before
-        color: #379eaa
-
-/* Fifth Slide */
-.sl-slide-5
-    .sl-slide-inner, .sl-content-slice
-        background: #ffeb41
-    .deco
-        border-color: #ECD82C
-        &:after
-            color: #000
-            text-shadow: 0 0 1px #000
-    h2, blockquote
-        color: #000
-        text-shadow: 1px 1px 1px rgba(0,0,0,0.1)
-    blockquote:before
-        color: #ecd82c
-
-/* sixth Slide */
-.sl-slide-6
-    .sl-slide-inner, .sl-content-slice
-        background: #7aad20
-    .deco
-        border-color: rgba(220,220,220,0.4)
-        &:after
-            color: #000
-            text-shadow: 0 0 1px #000
-
-    h2, blockquote
-        color: #000
-        text-shadow: 1px 1px 1px rgba(0,0,0,0.1)
-    blockquote:before
-        color: #ecd82c
+    blockquote
+        p:before, p:after
+            color: rgba(255, 255, 255, .7)
 
 /* Animations for content elements */
 
@@ -432,126 +440,23 @@ $sl-color-strong := #ffffff
         max-width: 1.5em
         max-height: 1.5em
 
-@keyframes ani-roll{
+@keyframes ani-roll {
     0% {transform: translateX(500px) rotate(360deg); opacity: 0;}
     100% {transform: translateX(0px) rotate(0deg); opacity: 1;}
 }
-@keyframes ani-moveUp{
+@keyframes ani-moveUp {
     0% {transform: translateY(40px);}
     100% {transform: translateY(0px);}
 }
-@keyframes ani-fadeIn{
+@keyframes ani-fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-@keyframes ani-scaleDown{
+@keyframes ani-scaleDown {
     0% {transform: scale(1);}
     100% {transform: scale(0.5);}
 }
-@keyframes ani-fadeOut{
+@keyframes ani-fadeOut {
     0% {opacity: 1;}
     100% {opacity: 0;}
-}
-
-
-/* Media Queries for custom slider */
-@media screen and (min-width:481px){
-    .album-tit-bd{
-        font-size:1.3em;
-    }
-    .album-desc{
-        font-size:1.0em;
-    }    
-}
-@media screen and (min-width:768px){
-    .album-item,.album-tit{
-        float:left;
-        display:inline;
-    }
-    .album-item {
-        margin-right:15px;
-    }
-    .album-tit{
-        float:right;
-        position:relative;
-        right:auto;
-        bottom:auto;
-        width: 430px;
-        height: 100%;
-    }
-    .album-grid-bd{
-        width:660px;
-    }
-}
-@media screen and (min-width:990px){
-    .album-tit-bd{
-        font-size:1.6em;
-        padding:0.2em 0.3em;
-    }
-    .album-grid-bd{
-        width: 820px;
-    }
-}
-@media screen and (min-width:1601px){
-    .album-tit-bd{
-        font-size:1.8em;
-    }
-    .album-desc{
-        font-size:1.2em;
-    }
-}
-@media screen and (max-width: 767px) {
-    .slideshow .sl-slide blockquote {
-        font-size:14px;
-    }
-    .slideshow .deco {
-        width: 150px;
-        height: 150px;
-        line-height:150px;
-        margin-left: -75px;
-        margin-bottom: 50px;
-        font-size:1.4em;
-    }
-
-    .slideshow .deco img{
-        width:110px;
-        height:110px;
-        margin:-55px 0 0 -55px;
-    }
-
-    .slideshow [data-icon]:after,.slideshow [data-ficon]:after{
-        width: 130px;
-        height: 130px;
-        line-height: 130px;
-        font-size: 45px;
-        margin: -65px 0 0 -65px;
-    }
-
-    .slideshow .sl-slide blockquote {
-        margin-bottom: -120px;
-    }
-
-    .slideshow .sl-slide h2 {
-        line-height: 22px;
-        font-size: 18px;
-        margin-bottom: -40px;
-        letter-spacing: 8px;
-    }
-
-    .slideshow .sl-slide blockquote p:before ,.slideshow .sl-slide blockquote p:after{
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        font-size: 60px;
-        left: -40px;
-        top:5px;
-    }
-    .slideshow .sl-slide blockquote p:after{
-        left:auto;
-        right:-40px;
-        top:-24px;
-    }
-    .nav-arrows {
-        display: none;
-    }
 }
