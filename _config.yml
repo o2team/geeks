@@ -17,7 +17,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://events.aotu.io
+url: https://geeks.aotu.io
 root: /
 permalink: notes/:year/:month/:day/:title/
 permalink_defaults:
@@ -138,7 +138,7 @@ github:
 
 # baidu sitemap
 baidusitemap:
-  url: http://events.aotu.io/
+  url: http://geeks.aotu.io/
 
 # filter_cleanup
 hfc_useref:
