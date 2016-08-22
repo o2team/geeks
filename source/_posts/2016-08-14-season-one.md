@@ -14,11 +14,41 @@ author:
     github_name: mamboer
 copyright: 凹凸实验室（aotu.io)
 slides:
+  - author: 李怡欣
+    company: 凹凸实验室
+    github_name: lyxuncle
+    avatar: https://misc.aotu.io/o2/avatars/lyx2016.jpg
+    title: CSS 3D
+    desc: CSS十级，然而一碰3D就懵逼——这么巧，我也是。为此我苦心研究，却还是过不好这一生……
+    tags:
+      - CSS3
+    orientation: vertical
+    slice1:
+      rotation: 10
+      scale: 1.5
+    slice2:
+      rotation: -15
+      scale: 1.5
+  - author: 范文杰
+    company: 腾讯通彩前端体验组
+    github_name: vanmess
+    avatar: https://misc.aotu.io/o2/geeks/tecfan.jpg
+    title: VUE实践-重构一款CSS3动画编辑器Timeline
+    desc: Timeline是一款可视化的CSS3动画编辑器，从jQuery时代的V1版本到现在的Vue V2版本，基于Vue我们可以架构更简单灵活的Web应用。
+    tags:
+      - VUE
+    orientation: vertical
+    slice1:
+      rotation: -5
+      scale: 2
+    slice2:
+      rotation: 25
+      scale: 1
   - author: 朱奕腾
     company: 凹凸实验室
     github_name: chuyik
     avatar: https://misc.aotu.io/o2/avatars/zhuyt.png
-    title: 教你用Leancloud实现微信朋友圈
+    title: Leancloud 三十分钟构建朋友圈
     desc: 移动互联网时代，我们可以有哪些创意交互？日益成熟的HTML5和CSS3前端技术能给我们带来什么样的功能支持？
     tags:
       - Leancloud
@@ -29,26 +59,11 @@ slides:
       scale: 2
     slice2:
       rotation: -25
-      scale: 2 
-  - author: 李怡欣
+      scale: 2
+  - author: 余禄宇
     company: 凹凸实验室
-    github_name: lyxuncle
-    avatar: https://misc.aotu.io/o2/avatars/IMG_6628_lyx.png
-    title: CSS3 3D
-    desc: 移动互联网时代，懂得HTML5和CSS3很重要，懂得利用数据来衡量这些新技术带来的效果，并支撑我们更好地利用这些技术来改进设计与体验更为重要。
-    tags:
-      - CSS3
-    orientation: vertical
-    slice1:
-      rotation: 10
-      scale: 1.5
-    slice2:
-      rotation: -15
-      scale: 1.5
-  - author: 小禄
-    company: 凹凸实验室
-    github_name: yangzicheng
-    avatar: https://avatars0.githubusercontent.com/u/8177724?v=3&s=120
+    github_name: cos2004
+    avatar: https://misc.aotu.io/o2/avatars/yuluyu.jpg
     title: ALFRED工作流
     desc: 移动互联网时代，我们可以有哪些创意交互？日益成熟的HTML5和CSS3前端技术能给我们带来什么样的功能支持？
     tags:
@@ -59,21 +74,6 @@ slides:
       scale: 2
     slice2:
       rotation: 3
-      scale: 1
-  - author: 神秘嘉宾
-    company: 腾讯通彩前端体验组
-    github_name: yangzicheng
-    avatar: https://avatars0.githubusercontent.com/u/8177724?v=3&s=120
-    title: VUE实践
-    desc: 移动互联网时代，我们可以有哪些创意交互？日益成熟的HTML5和CSS3前端技术能给我们带来什么样的功能支持？
-    tags:
-      - VUE
-    orientation: vertical
-    slice1:
-      rotation: -5
-      scale: 2
-    slice2:
-      rotation: 25
       scale: 1
   - author: 
     company: 凹凸实验室

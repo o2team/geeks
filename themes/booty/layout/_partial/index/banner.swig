@@ -9,12 +9,12 @@
         </div>
 
         <div class="evt" id="evt">
-            <div class="evt-header ani">
+            <div class="evt-header">
                 <h1 class="evt-title">{{config.fulltitle}}</h1>
                 <blockquote class="blockquote-em">{{config.slogan}}</blockquote>
                 <p class="evt-subtitle">{{config.subtitle_desc}}</p>
             </div>
-            <div id="evtList" class="evt-list ani">
+            <div id="evtList" class="evt-list">
                 {% for post in page.posts %}
                 {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
                 {% include '../post/mini.swig' with {post:post, author:author} %}
