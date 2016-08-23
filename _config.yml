@@ -119,7 +119,7 @@ deploy:
   type: git
   message: Super AOTUMan at {{ now('YYYY-MM-DD HH:mm:ss') }}
   repo: 
-    github: git@github.com:o2team/events.git,gh-pages
+    github: git@github.com:o2team/geeks.git,gh-pages
 
 # Disqus
 disqus_shortname:
