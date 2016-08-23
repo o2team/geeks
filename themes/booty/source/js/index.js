@@ -10,12 +10,6 @@
             });
         },
         run: function() {
-            this.$header.animateCSS('slideInDown', {
-                delay: 700
-            });
-            this.$list.animateCSS('slideInUp', {
-                delay: 900
-            });
         }
     };
 
