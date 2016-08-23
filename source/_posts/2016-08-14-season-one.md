@@ -1,7 +1,7 @@
 season: 1
 title: SEASON 1 - 凹凸有致&middot;极客沙龙
 shorttitle: 凹凸有致 - Geek Talks
-subtitle: "2016年8月26日，深圳。凹凸实验室联袂腾讯CDG通彩前端体验组举办的首季『凹凸有致&middot;极客沙龙』，主题是『存储、表现与工作流』。"
+subtitle: "2016年8月26日，深圳。凹凸实验室联袂腾讯CDG通彩前端体验组举办的首季『凹凸有致&middot;极客沙龙』，主题是『存储、表现』。"
 cover: //misc.aotu.io/mamboer/2016/evt-s1-bg.jpg
 logo: /img/logo.png
 yylive: http://www.yy.com/u/1759670940
@@ -60,21 +60,6 @@ slides:
     slice2:
       rotation: -25
       scale: 2
-  - author: 余禄宇
-    company: 凹凸实验室
-    github_name: cos2004
-    avatar: https://misc.aotu.io/o2/avatars/yuluyu.jpg
-    title: ALFRED工作流
-    desc: 移动互联网时代，我们可以有哪些创意交互？日益成熟的HTML5和CSS3前端技术能给我们带来什么样的功能支持？
-    tags:
-      - Alfred
-    orientation: horizontal
-    slice1:
-      rotation: 3
-      scale: 2
-    slice2:
-      rotation: 3
-      scale: 1
   - author: 
     company: 凹凸实验室
     desc: 关注凹凸实验室公众号，可以每周接收热门的开发资讯，及时了解『凹凸有致』极客沙龙的活动消息，获取极客沙龙分享课件。

@@ -10,9 +10,8 @@
 
 分享主题预告：
 
-1. Leancloud 三十分钟构建朋友圈
-2. CSS 3D
+1. CSS 3D
+2. Leancloud 三十分钟构建朋友圈
 3. VUE实践 - 重构一款CSS3动画编辑器Timeline
-4. Alfred工作流
 
 更多信息请猛击：https://geeks.aotu.io/notes/2016/08/14/season-one/
