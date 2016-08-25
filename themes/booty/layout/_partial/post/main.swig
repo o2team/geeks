@@ -12,7 +12,7 @@
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-45" data-slice2-rotation="-10" data-slice1-scale="1.5" data-slice2-scale="1">
             <div class="sl-slide-inner">
                 <div class="ecard">
-                    <div class="deco" data-icon=""><img src="{{post.logo}}" alt="凹凸有致"/></div>
+                    <div class="deco" data-icon=""><img src="{{post.logo}}" alt="{{config.subtitle}}"/></div>
                     <h2>{{post.shorttitle}}</h2>
                     <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite class="cl-effect-circle"><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
                 </div>
