@@ -4,7 +4,7 @@ shorttitle: 凹凸极客 - Geek Talks
 subtitle: "2016年8月26日，深圳。凹凸实验室联袂腾讯CDG通彩前端体验组举办的首季『凹凸极客沙龙』，主题是『存储、表现』。"
 cover: //misc.aotu.io/mamboer/2016/evt-s1-bg.jpg
 logo: /img/logo.png
-yylive: http://www.yy.com/x/15013x03_1333942119_1561481138_1472195448_1472195448
+live: http://www.douyu.com/983115
 date: 2016-08-14 10:24:35
 categories: 分享会
 tags:
