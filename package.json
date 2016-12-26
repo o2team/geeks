@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "fs-extra": "^0.30.0",
+    "fs-extra": "^1.0.0",
     "hexo": "^3.2.2",
     "hexo-deployer-git": "0.2.0",
     "hexo-filter-cleanup": "^1.0.6",
@@ -27,17 +27,17 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "*",
     "hexo-renderer-marked": "^0.2.11",
-    "hexo-renderer-stylus": "^0.3.1",
+    "hexo-renderer-stylus": "mamboer/hexo-renderer-stylus",
     "hexo-server": "^0.2.0",
     "hexo-util": "^0.6.0",
-    "hexo-wordcount": "1.2.3",
-    "lodash": "^4.15.0",
+    "hexo-wordcount": "2.0.0",
+    "lodash": "^4.17.3",
     "lunr": "github:codepiano/lunr.js.git"
   },
   "devDependencies": {
-    "eslint": "^3.4.0",
+    "eslint": "^3.12.2",
     "eslint-config-defaults": "^9.0.0",
-    "js-yaml": "^3.6.1"
+    "js-yaml": "^3.7.0"
   },
   "optionalDependencies": {
     "hexo-browsersync": "^0.2.0"
