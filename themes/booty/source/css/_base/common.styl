@@ -1,7 +1,8 @@
-html,body
-    display:block
-    height: 100%
+// html,body
+//     display:block
+//     height: 100%
 html
+    font-size: 16px
     &.ovf-hidden
         overflow: hidden
         body
@@ -13,6 +14,7 @@ body
     font-size: 15px
     -webkit-font-smoothing: antialiased
     background-image: url($bgimg-body)
+    background-size: 100% 100%
     background-repeat: repeat
 a
     color: $color-link
@@ -21,15 +23,15 @@ a
         text-decoration: none
         color: $color-accent
 
-.page-full .wrapper {
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+// .page-full .wrapper {
+//     height: 100%;
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     width: 100%;
+//     padding: 0;
+//     margin: 0;
+// }
 
 .clr {
     clear: both;
@@ -100,7 +102,7 @@ a
         color: $color-btn-text
         background: 0 0
         transition: all .3s ease-in-out
-        &:hover 
+        &:hover
             color: $color-btn-text
             background: $color-btn-bg-lite
             border: 1px solid $color-btn-bg-lite

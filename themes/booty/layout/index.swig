@@ -4,8 +4,10 @@
 
 {% block main %}
 
-    {% include '_partial/index/banner.swig' %}
-    
+   {% include '_partial/index/banner.swig' %}
+   {% include '_partial/index/main.swig' %}
+   {% include '_partial/index/footer.swig' %}
+
 {% endblock %}
 
 {% block footer %}

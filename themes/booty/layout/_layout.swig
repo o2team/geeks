@@ -24,6 +24,6 @@
     {% endblock %}
 
     </div>
-    
+
 </body>
 </html>

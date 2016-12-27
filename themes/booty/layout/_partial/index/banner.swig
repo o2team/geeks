@@ -1,12 +1,7 @@
-<section class="home fullscreen" id="home">
-    <div class="background"></div>
-    <div class="home-hd"></div>
-    <div class="home-bd">
-        <div class="brand">
-            <div class="brand-logo" id="brandLogo">
-                <img src="img/logo.png" alt="{{config.fulltitle}}">
-            </div>
-        </div>
+<section class="banner">
+    <div class="banner-title">
+        <p>前端体验主题交流会</p>
+        <p>时间：2016.12.28 （周三） 14:30~18:00</p>
+        <p>地址：南山区科技中一路大族大厦 7楼 D-717</p>
     </div>
-
 </section>
