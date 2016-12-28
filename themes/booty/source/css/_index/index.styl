@@ -52,6 +52,10 @@ ul
         background-position: center 36px
         background-repeat: no-repeat
 
+        .content
+            position: relative
+            z-index: 10
+
         &:nth-child(3)
             .topic_bg
                 img
@@ -126,7 +130,7 @@ ul
             -webkit-line-clamp: 3
             overflow: hidden
             +tablet-down()
-                -webkit-line-clamp: 5 
+                -webkit-line-clamp: 5
 
 
       .topic_bg
@@ -143,6 +147,7 @@ ul
           img
               position: absolute
               right: 0
+              z-index: 1
               +tablet-down()
                   width: 100%
                   top: 8px
