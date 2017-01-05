@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://geeks.aotu.io
 root: /
 permalink: notes/:year/:month/:day/:title/
@@ -118,7 +118,7 @@ lunr:
 deploy:
   type: git
   message: Super AOTUMan at {{ now('YYYY-MM-DD HH:mm:ss') }}
-  repo: 
+  repo:
     github: git@github.com:o2team/geeks.git,gh-pages
 
 # Disqus
@@ -150,13 +150,13 @@ hfc_html:
 
 hfc_css:
   enable: true
-  exclude: 
+  exclude:
     - '*.min.css'
 
 hfc_js:
   enable: true
   mangle: true
-  exclude: 
+  exclude:
     - '*.min.js'
 
 hfc_img:

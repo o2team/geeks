@@ -3,7 +3,7 @@
 {% block page_class %}page-full page-index{% endblock %}
 
 {% block main %}
-
+  {% include '_partial/index/head.swig' %}
    {% include '_partial/index/banner.swig' %}
    {% include '_partial/index/main.swig' %}
    {% include '_partial/index/footer.swig' %}

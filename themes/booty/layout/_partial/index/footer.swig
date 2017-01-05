@@ -9,10 +9,10 @@
         </div>
         <div class="hold assist">
           <dl>
-            <dt>协办方</dt>
-            <dd>京东凹凸实验室</dd>
-            <dd>QQ浏览器团队</dd>
-            <dd>腾讯TGideas团队</dd>
+              <dt>协办方</dt>
+              <dd><a href="https://aotu.io/" target="_blank">京东凹凸实验室</a></dd>
+              <dd><a href="http://tgideas.qq.com/" target="_blank">腾讯TGideas团队</a></dd>
+              <dd>QQ浏览器团队</dd>
           </dl>
         </div>
         <div class="qrCode">

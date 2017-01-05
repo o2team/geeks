@@ -1,33 +1,125 @@
+p, h3
+    line-height: 1
+
+.head
+    &.list-head
+          background-color: #000
+
+.main-wrap
+    width: 100%
+    max-width: 900px
+    padding: 10px 10px 100px
+    box-sizing: border-box
+    min-height: 500px
+    margin: 0 auto
+
+.evt
+    overflow: hidden
+
+    a
+        color: #000
+
 .post
-    max-width: 320px
-    margin-left: auto
-    margin-right: auto
-    margin-bottom: 1em
-    padding-bottom: 1em
-    transition: box-shadow .2s ease-out
+    margin-top: 25px
+    padding: 0 10px
+    box-sizing: border-box
+    width: 50%
+    float: left
+    // max-width: 320px
+    // margin-left: auto
+    // margin-right: auto
+    // margin-bottom: 1em
+    // padding-bottom: 1em
+    // transition: box-shadow .2s ease-out
+    &:hover
+        .post-ovl
+            background: rgba(0, 0, 0, 0)
+
     cfx()
-    &-main
-        transition: all .2s ease-out
-        display: block
-        &:hover
-            box-shadow: 0 1px 2px rgba(0, 0, 0, .1)
-            .post-ovl
-                background: rgba(0, 0, 0, 0)
+    +tablet-down()
+        width: 100%
+
+    &:nth-child(1)
+        width: 100%
+        margin-bottom: 20px
+
+        +tablet-down()
+            margin-bottom: 0
+            a
+                display: none
+
+        .post-cover
+            height: 440px
+            a
+                display: block
+                z-index: 10
+
+            +tablet-down()
+                height: 200px
+
+        .post-tit
+            font-size: 22px
+
+        .post-desc
+            padding-bottom: 50px
+            border-bottom: 1px solid #eaeaea
+
+    // &-main
+    //     transition: all .2s ease-out
+    //     display: block
+    //     &:hover
+    //         box-shadow: 0 1px 2px rgba(0, 0, 0, .1)
+    //         .post-ovl
+    //             background: rgba(0, 0, 0, 0)
     img
-        max-width: 100%
-        position: relative
-        z-index: 1
+        width: 100%
+        height: 100%
+
     &-cover
         position: relative
+        margin-bottom: 20px
+        height: 236px
+        transition: all .2s ease-out
+        &:hover
+            .post-ovl
+                background: rgba(0, 0, 0, 0)
+        a
+            display: none;
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            margin: auto
+            border: 1px solid #000
+            width: 150px
+            height: 44px
+            text-align: center
+
     &-ovl
         fullscreen(2)
         transition: all .3s ease-out
         background: rgba(0, 0, 0, .5)
-    &-info
-        text-align: left
-        padding-left: 5px
-        padding-right: 5px
+    // &-info
+    //     text-align: left
+    //     padding-left: 5px
+    //     padding-right: 5px
+    &-desc
+        color: #666
+        line-height: 1.2
+        +tablet-down()
+            padding-bottom: 20px
+            border-bottom: 1px solid #eaeaea
     &-tit
-        font-size: 22px
-    &-btn
-        min-width: 100%
+        font-size: 18px
+        margin-bottom: 10px
+    // &-btn
+    //     min-width: 100%
+
+.foot
+    background-color: #f8f8f8
+    padding: 30px 0
+    p
+        text-align: center
+        font-size: 12px
+        color: #999

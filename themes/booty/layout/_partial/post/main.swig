@@ -8,7 +8,7 @@
 <div id="slider" class="sl-slider-wrapper">
 
     <div class="sl-slider">
-        
+
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-45" data-slice2-rotation="-10" data-slice1-scale="1.5" data-slice2-scale="1">
             <div class="sl-slide-inner">
                 <div class="ecard">
@@ -35,7 +35,7 @@
                         <div class="album-grid">
                             <div class="album-grid-bd">
                                 <div class="album-item">
-                                    <img class="album-img" src="{{slide.avatar}}" alt="{{slide.author}}"/>                  
+                                    <img class="album-img" src="{{slide.avatar}}" alt="{{slide.author}}"/>
                                 </div>
                                 <div class="album-tit">
                                     <div class="album-tit-bd">
@@ -47,13 +47,13 @@
                         </div>
                         {% endif %}
                         {% endfor %}
-                    </div>  
-                </div> 
+                    </div>
+                </div>
             </div>
         </div>
 
         {% for slide in post.slides %}
-        <div class="sl-slide sl-slide-{{loop.index}} {{slide.xclass}}" 
+        <div class="sl-slide sl-slide-{{loop.index}} {{slide.xclass}}"
             data-orientation="{{slide.orientation}}"
             data-slice1-rotation="{{slide.slice1.rotation}}"
             data-slice2-rotation="{{slide.slice2.rotation}}"
@@ -76,7 +76,7 @@
         {% endfor %}
 
     </div><!-- /sl-slider -->
-    
+
     <nav id="nav-arrows" class="nav-arrows">
         <span class="nav-arrow-prev">Previous</span>
         <span class="nav-arrow-next">Next</span>

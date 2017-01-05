@@ -31,6 +31,5 @@
 
 {% block main %}
 {% set author = page.author|default({github_name:config.github.user, nick:config.author}) %}
-{{ partial('_partial/post/main', {post:page, author: author}) }}
+{{ partial('_partial/post/main', {post: page, author: author}) }}
 {% endblock %}
-

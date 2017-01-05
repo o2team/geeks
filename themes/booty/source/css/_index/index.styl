@@ -1,12 +1,12 @@
 @import "post"
 
-$brandH = 150px
-$brandOffsetTop = - ($brandH/2)
+body
+    &.page-index
+        background-image: url($bgimg-body)
 
-p,h1,h2,h3
-    margin: auto
-ul
-    padding: 0
+.head {
+  background-color: #8b70df;
+}
 
 .banner
     background: url("../../img/banner.png") no-repeat
@@ -182,6 +182,9 @@ ul
         dd
             font-size: 0.92rem
             line-height: 2.16rem
+            a
+                color: #fff
+
             +tablet-down()
                 font-size: 0.7425rem;
                 line-height: 1.5188rem;
