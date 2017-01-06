@@ -42,8 +42,11 @@
 
         +tablet-down()
             margin-bottom: 0
-            a
-                display: none
+            .post-cover
+                a
+                    display: none !important
+            .post-tit
+                font-size: 18px !important
 
         .post-cover
             height: 440px
@@ -105,7 +108,7 @@
         color: #666
         line-height: 1.2
         +tablet-down()
-            padding-bottom: 20px
+            padding-bottom: 20px !important
             border-bottom: 1px solid #eaeaea
     &-tit
         font-size: 18px
