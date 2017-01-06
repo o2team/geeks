@@ -18,10 +18,10 @@ slides:
     company: 凹凸实验室
     github_name: lyxuncle
     avatar: https://misc.aotu.io/o2/avatars/lyx2016.jpg
-    title: CSS 3D
-    desc: CSS十级，然而一碰3D就懵逼——这么巧，我也是。为此我苦心研究，却还是过不好这一生……
+    title: 京东首页前端优化之路
+    desc: 介绍京东首页的整体技术架构和团队开发模式，以及在此次优化过程中所面临的性能、体验、页面可用性等方面的挑战和解决之道。
     tags:
-      - CSS3
+      - 优化
     orientation: vertical
     slice1:
       rotation: 10
@@ -29,12 +29,12 @@ slides:
     slice2:
       rotation: -15
       scale: 1.5
-  - author: 范文杰
-    company: 腾讯通彩前端体验组
+  - author: 黄文杰
+    company: 腾讯TGideas团队
     github_name: vanmess
     avatar: https://misc.aotu.io/o2/geeks/tecfan.jpg
-    title: VUE实践-重构一款CSS3动画编辑器Timeline
-    desc: Timeline是一款可视化的CSS3动画编辑器，从jQuery时代的V1版本到现在的Vue V2版本，基于Vue我们可以架构更简单灵活的Web应用。
+    title: 前端开发的自我修养
+    desc: 一名优秀的前端开发是否只需要在专业技能上修炼就足矣 ？黄文杰将从多维度的自我修养告诉我们，前端开发，不止一面。
     tags:
       - VUE
     orientation: vertical
@@ -44,12 +44,12 @@ slides:
     slice2:
       rotation: 25
       scale: 1
-  - author: 朱奕腾
+  - author: 刘慧敏
     company: 凹凸实验室
     github_name: chuyik
     avatar: https://misc.aotu.io/o2/avatars/zhuyt.png
-    title: Leancloud 三十分钟构建朋友圈
-    desc: 移动互联网时代，我们可以有哪些创意交互？日益成熟的HTML5和CSS3前端技术能给我们带来什么样的功能支持？
+    title: 京东购物之微信小程序版诞生记
+    desc: 京东购物微信小程序的诞生过程实况记录，分享第一手的开发经验，一起探讨交流，那些年，做过的小程序，踩过的蛋疼坑。  
     tags:
       - Leancloud
     xclass: bg-light
