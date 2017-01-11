@@ -1,5 +1,5 @@
 <!-- Post -->
-<article class="post" style="display:none">    
+<article class="post" style="display:none">
     <div class="post-content">
         {{ post.content}}
     </div>
@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="15" data-slice2-rotation="8" data-slice1-scale="1.5" data-slice2-scale="1">
+        <div class="sl-slide sl-slide-list" data-orientation="vertical" data-slice1-rotation="15" data-slice2-rotation="8" data-slice1-scale="1.5" data-slice2-scale="1">
             <div class="sl-slide-inner">
                 <div id="album" class="album ani-fade">
                     <h2 class="album-hd">分享嘉宾</h2>

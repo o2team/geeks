@@ -2,7 +2,12 @@
 
     if(App.isHome) return;
 
-    $("#slider")[0].addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+      var slides = $('.sl-slide').not('.sl-slide-list');
+      slides.each(function(i) {
+        slides[i].addEventListener('touchmove', function (e) { e.preventDefault(); }, false);;
+      })
+      
+
     $(function() {
 
         var Page = (function() {
@@ -82,6 +87,7 @@
                         if( !evt.state || ( evt.state.idx== (slitslider.current+1) ) ) return false;
                         isPopState = true;
                         slitslider.jump(evt.state.idx);
+
                     });
 
                     var hash = location.hash,
@@ -104,13 +110,23 @@
                     }
                 },
                 initGesture = function(){
-                    slitslider.$el.hammer({
+                  var slides = $('.sl-slide').not('.sl-slide-list');
+                  slides.hammer({
 
-                    }).on('panup',function(e){
-                        slitslider.next();
-                    }).on('pandown',function(e){
-                        slitslider.previous();
-                    });
+                  }).on('panup',function(e){
+                      slitslider.next();
+
+                  }).on('pandown',function(e){
+                      slitslider.previous();
+                  });
+                  // slitslider.$el.hammer({
+                  //
+                  // }).on('panup',function(e){
+                  //     slitslider.next();
+                  //     console.log("test");
+                  // }).on('pandown',function(e){
+                  //     slitslider.previous();
+                  // });
                 },
                 initAlbum = function(){
                     var idxCache = {},
