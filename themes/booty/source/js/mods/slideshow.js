@@ -115,6 +115,7 @@
                 initAlbum = function(){
                     var idxCache = {},
                         $album = $('#album'),
+                        $albumBd = $('.album-bd'),
                         $items = $album.find('.album-grid'),
                         len = $items.length;
 
@@ -122,8 +123,17 @@
                         return;
                     }
 
+                    if(len>3) {
+                        $albumBd.css({
+                            top: 0,
+                            overflow: 'auto',
+                            padding: '5% 0',
+                            height: '100%'
+                        })
+                    }
+
                     $items.css({
-                        height: (100/len + '%')
+                        height: ('33.33%')
                     });
 
                     $items.each(function(i,o){
