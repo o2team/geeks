@@ -16,12 +16,6 @@
                     <h2>{{post.shorttitle}}</h2>
                     <blockquote><div class="quote-inner">{{post.subtitle}}</div><cite class="cl-effect-circle"><a href="//aotu.io" target="_blank">{{post.copyright}}</a></cite></blockquote>
                 </div>
-                <div class="c-flex sl-back">
-                    <a href="/" title="Back to up.aotu.io" class="sl-back-btn">
-                        <svg class="sl-icon sl-icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg>
-                    </a>
-                    <a href="//aotu.io" title="Back to aotu.io" class="sl-back-btn"><img src="{{url_for('img/logo-o2.png')}}" alt="aotu.io"/></a>
-                </div>
             </div>
         </div>
 
@@ -91,3 +85,23 @@
     </nav>
 
 </div><!-- /slider-wrapper -->
+
+<div class="c-flex sl-back">
+    <a href="{{url_for('notes')}}" title="Back to Notes" class="sl-back-btn">
+        <svg class="sl-back-ico ico-home" viewBox="63 65 895 895" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="list" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(63.000000, 65.000000)">
+                <path d="M447.641049,894.828468 C201.068257,894.828468 0.475683,694.232824 0.475683,447.672312 C0.475683,201.095427 201.069281,0.499783 447.641049,0.499783 C694.202584,0.499783 894.806415,201.095427 894.806415,447.672312 C894.807439,694.232824 694.202585,894.828468 447.641049,894.828468 Z M447.641049,54.589702 C230.89968,54.589702 54.563556,230.927873 54.563556,447.671289 C54.563556,664.423915 230.89968,840.737526 447.641049,840.737526 C664.382418,840.737526 840.718542,664.399355 840.718542,447.671289 C840.718543,230.939129 664.383442,54.589702 447.641049,54.589702 Z" id="Shape" fill="#6190e8"></path>
+                <polygon id="Shape" fill="#6190e8" points="365.872744 420.626329 651.165396 420.626329 651.165396 474.710108 365.872744 474.710109"></polygon>
+                <polygon id="Shape" fill="#6190e8" points="365.859441 276.725942 651.152093 276.725942 651.152093 330.818931 365.859441 330.818931"></polygon>
+                <polygon id="Shape" fill="#6190e8" points="365.846138 564.508297 651.152093 564.508297 651.152093 618.601286 365.846138 618.601286"></polygon>
+                <polygon id="Shape" fill="#6190e8" points="257.692906 420.61098 313.104937 420.61098 313.104937 474.710109 257.692906 474.710109"></polygon>
+                <polygon id="Shape" fill="#6190e8" points="257.67858 276.714685 313.090611 276.714685 313.090611 330.804604 257.67858 330.804604"></polygon>
+                <polygon id="Shape" fill="#6190e8" points="257.667324 564.508297 313.090611 564.508297 313.090611 618.601286 257.667324 618.601286"></polygon>
+            </g>
+        </svg>
+    </a>
+    <a href="//aotu.io" title="Back to aotu.io" class="sl-back-btn"><img class="sl-back-ico" src="{{url_for('img/logo-o2.png')}}" alt="aotu.io"/></a>
+</div>

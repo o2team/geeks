@@ -1,14 +1,20 @@
 @import "post"
 
+$color-bg-header = rgba(139, 112, 223, 0.9)
+
 body
     &.page-index
         background-image: url($bgimg-body)
 
-.head {
-  background-color: #8b70df;
-}
+.head
+  &-index
+    background-color: $color-bg-header
+  a
+    color #fff
+    &:hover
+      opacity 0.8
 
-.banner
+.index-banner
     background: url("../../img/banner.png") no-repeat
     background-size: contain
     max-width: 728px
@@ -24,14 +30,14 @@ body
         font-size: 0.844rem
         line-height: 1.69rem
 
-.banner-title
-    display: inline-block
-    position: relative
-    left: 50%
-    transform: translateX(-50%)
-    margin-top: 70%
+    .banner-title
+        display: inline-block
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: 70%
 
-.main
+.index-main
     max-width: 900px
     margin: 0 auto
 
@@ -153,7 +159,7 @@ body
                   top: 8px
 
 
-.footer
+.index-footer
     box-sizing: border-box
     max-width: 900px
     width: 100%

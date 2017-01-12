@@ -1,4 +1,4 @@
-<section class="footer">
+<section class="index-footer">
         <div class="hold">
           <dl>
             <dt>主办方</dt>

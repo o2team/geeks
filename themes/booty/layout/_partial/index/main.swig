@@ -1,4 +1,4 @@
-<section class="main">
+<section class="index-main">
     <ul>
         <li class="topic">
           <div class="topic_bg">

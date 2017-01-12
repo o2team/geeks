@@ -1,7 +1,7 @@
 season: 1
 title: SEASON 1 - 凹凸极客沙龙
-shorttitle: 凹凸极客 - Geek Talks
-subtitle: "2016年8月26日，深圳。凹凸实验室联袂腾讯CDG通彩前端体验组举办的首季『凹凸极客沙龙』，主题是『存储、表现』。"
+shorttitle: 第1季 - Geek Talks
+subtitle: "2016年8月26日，深圳。凹凸实验室联袂腾讯CDG通彩前端体验组举办的首季『极客沙龙』，主题是『存储、表现』。"
 cover: //misc.aotu.io/mamboer/2016/evt-s1-bg.jpg
 logo: /img/logo.png
 live: http://www.douyu.com/geeks

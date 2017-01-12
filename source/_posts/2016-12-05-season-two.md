@@ -1,6 +1,6 @@
 season: 2
 title: SEASON 2 - 凹凸极客沙龙
-shorttitle: 凹凸极客 - Geek Talks
+shorttitle: 第2季Geek Talks - 知·行
 subtitle: "鹅厂Fit主办，凹凸实验室、QQ浏览器团队、腾讯TGideas团队联合协办，其主题为『知行』。"
 cover: //misc.aotu.io/o2/img/geektalks/s2/gt-s2-banner.jpg
 logo: /img/logo.png

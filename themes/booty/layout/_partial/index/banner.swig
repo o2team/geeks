@@ -1,4 +1,4 @@
-<section class="banner">
+<section class="index-banner">
     <div class="banner-title">
         <p>第2季极客沙龙 - 前端体验主题交流会</p>
         <p>时间：2016.12.28 （周三） 14:30~18:00</p>
