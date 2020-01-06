@@ -1,0 +1,30 @@
+- title: 小游戏的开发实现
+  desc: 两个小游戏的前端开发实现，包括「三消」和「连连看」，以及使用 Vue 框架实现的实例。
+  image: img/topic1.jpg
+  author: 胡俊文
+  team: 京东·未知素团队
+- title: 小程序购物车性能优化
+  desc: 首屏时间提升27%，可操作时间提升50%！！！带你了解京东购物小程序购物页极限性能优化之路。
+  image: img/topic2.jpg
+  author: 朱志玉
+  team: 京东·WecTeam
+- title: 基于Taro的京喜首页性能优化实践
+  desc: 通过对项目性能瓶颈的分析及改造，我们成功把初次访问京喜小程序的可交互时间减少40%，希望这一系列优化实践能对其他项目有所价值。
+  image: img/topic3.jpg
+  author: 岑俊伟
+  team: 京东·凹凸实验室团队
+- title: 设计大脑 - 羚珑智能作图和语音识别技术的结合
+  desc: 介绍我们在将语音技术、自然语言处理和羚珑的智能设计能力结合上做出的探索和尝试。
+  image: img/topic4.jpg
+  author: 朱世杰
+  team: 京东·凹凸实验室团队
+- title: Serverless 的前世今生
+  desc: 关于Serverless的讨论越来越多，看似与我们关系不大，实际上已经在很多场景下获得应用，那么，到底什么是Serverless，能否对我们的日常工作带来一些启示？
+  image: img/topic5.jpg
+  author: 吴文伟
+  team: 京东·凹凸实验室团队
+- title: 揭秘可视化在线编辑器架构
+  desc: 羚珑ATOM智能页面设计是实现跨平台、跨终端、跨场景能力，并且具备代码化配置基础，一次搭建，一键上线，多端适配的平台，其中可视化在线编辑器是不可缺少的关键一环。
+  image: img/topic6.jpg
+  author: 王彩暖
+  team: 京东·凹凸实验室团队

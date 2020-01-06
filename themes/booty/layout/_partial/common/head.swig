@@ -48,6 +48,7 @@
 {% if theme.fancybox %}
 {{ css('assets/fancybox/jquery.fancybox.css') }}
 {% endif %}
+{{ css('assets/fancybox/swiper.css') }}
 
 <!-- RSS -->
 {{ feed_tag('atom.xml') }}

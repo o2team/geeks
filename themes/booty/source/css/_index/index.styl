@@ -1,212 +1,422 @@
 @import "post"
 
-$color-bg-header = rgba(139, 112, 223, 0.9)
+$color-bg-header = rgba(0,0,0,1)
+$color-red = #D0021B
+$color-font = #fff
+$zIndex = 10
+
+$margin: 5%
 
 body
     &.page-index
-        background-image: url($bgimg-body)
+        width: 100%
+        overflow-x: hidden
+        background-color: $color-bg-header
 
 .head
-  &-index
-    background-color: $color-bg-header
-  a
-    color #fff
-    &:hover
-      opacity 0.8
+    position: relative
+
+    .container
+        +tablet-down()
+            padding-left: 5%;
+
+    &-index
+        background-color: $color-bg-header
+
+    &-links
+        +tablet-down()
+            display: none
+    a
+        color #fff
+        font-size: 14px
+        font-weight: normal
+        transition: all 0.5s
+
+        &:last-child
+            padding: 3px 16px
+            background-color: $color-red
+
+        &:hover
+            opacity 0.8
+
+.wrapper
+    width: 100%
+    overflow-x: hidden
 
 .index-banner
     background: url("../../img/banner.png") no-repeat
     background-size: contain
-    max-width: 728px
-    width: 95%
-    margin: 4% auto
-    color: #fff
-    line-height: 2.16rem;
-    font-style: italic
-    font-size: 1.08rem
+    max-width: 1000px
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 130px;
+    width: 90%;
+    border-radius: 10px
+    color: $color-font
     position: relative
+    height: 500px
 
     +tablet-down()
-        font-size: 0.844rem
-        line-height: 1.69rem
+        width: 6.5rem!important
+        margin-top: 29px
+        margin-bottom: 20px!important
+        height: 3.25rem!important
 
-    .banner-title
+        &__box,
+        &__square
+            display: none!important
+
+        &__title
+            display: block!important
+
+    &__box
         display: inline-block
-        position: relative
-        left: 50%
-        transform: translateX(-50%)
-        margin-top: 70%
+        position: absolute
+        left: -120px
+        top: 80px
+        height: 300px
+        padding-top: 40px;
+        width: 180px
+        color: $color-font
+        text-align: center
+        font-style: normal
+        background-color: $color-red
+        z-index: $zIndex
+
+        h2 
+            display: inline
+            font-size: 20px
+            padding: 9px 2px
+            font-weight: normal
+            border-bottom: 1px solid #fff
+        
+        h3 
+            margin-top: 11px
+            font-weight: bold
+            font-size: 30px
+
+    &__title
+        display: none 
+        position: absolute
+        text-align: center
+        top: 128px
+        left: 0
+        width: 160px
+        height: 60px
+        line-height: 60px
+        background-color: $color-red
+        z-index: $zIndex
+        font-weight: bold
+        color: $color-font
+        font-size: 30px
+        
+
+    &__square
+        position: absolute
+        display: inline-block
+        width: 40px
+        height: 40px
+        z-index: $zIndex
+        background-color: $color-red
+        top: 380px;
+        left: -160px;
+
+    &__effect
+        position: absolute
+        left: 0
+        top: 200px
+        filter: blur(1px)
+        z-index: -1
+
+        +tablet-down()
+            top: -50px
 
 .index-main
-    max-width: 900px
+    max-width: 1200px
     margin: 0 auto
 
-    +tablet-down()
-        margin-top: 80px
+    .column
+        &-container
+            +tablet-down()
+                margin: 0 auto
+                margin-left: 5%!important
+                margin-right: 5%!important
+                width: 90% !important
+                box-sizing: border-box
 
-    ul
+        &-header
+            color: $color-font
+            text-align: left
+            border-bottom: 1px solid #fff
+            margin-top: 100px
+            margin-bottom: 60px
+
+            +tablet-down()
+                margin: 0 auto
+                margin-left: 5%!important
+                margin-right: 5%!important
+                margin-top: 100px
+                width: 90% !important
+                box-sizing: border-box
+
+
+            h2
+                color: $color-font
+                font-weight: bold
+                font-size: 50px
+            
+            h3
+                color: $color-font
+                font-weight: normal
+                font-size: 26px
+                line-height: 48px
+
+    ul.column-container
         overflow: hidden
+        padding-top: 51px
 
     .topic
+        display: flex
         list-style: none
-        width: 50%
-        max-width: 450px
-        min-height: 406px
-        padding-right: 10px
+        width: 100%
+        color: $color-font
+        text-align: left 
         box-sizing: border-box
-        float: left
-        background-position: center 36px
-        background-repeat: no-repeat
+        margin-bottom: 80px
+        overflow: hidden
+        
+        &:last-child
+            margin-bottom: 0!important
 
-        .content
-            position: relative
-            z-index: 10
-
-        &:nth-child(3)
-            .topic_bg
-                img
-                    top: -18px
-
-        &:nth-child(4)
-            .topic_bg
-                img
-                    left: -30px
-                    top: -74px
-
-        +tablet-down()
-            width: 95%
-            margin: 0 auto 20px
-            float: none
-            min-height: auto
-            display: -webkit-box
-            .content
-                margin: 0 !important
-                -webkit-box-flex: 4
-
-            &:nth-child(1)
-                .topic_bg
-                    img
-                        width: 160%
-
-            &:nth-child(3)
-                .topic_bg
-                    img
-                        width: 120%
-                        top: 0
-                        right: 0
-
-            &:nth-child(4)
-                .topic_bg
-                    img
-                        width: 170%
-                        left: -16px
-                        top: -25px
-
-            &:nth-child(5)
-                .topic_bg
-                    img
-                        width: 150%
-
-        div
-            margin-left: 134px
-
-        &:nth-child(even)
-            div
-                margin-left: 72px
-
-        h1
-            font-size: 1.32rem
-            margin-bottom: 12px
-            +tablet-down()
-                font-size: 1.1rem
-
-        h3, p
-            font-size: .75rem
-            margin-bottom: 8px
-            +tablet-down()
-                font-size: .675rem
-
-        h3
-            color: #333
-
-        p
-            color: #666
-            display: -webkit-box
-            -webkit-box-orient: vertical
-            -webkit-line-clamp: 3
+        &-img
+            flex: 0 0 180px;
+            width: 180px
+            height: 180px
+            display: block
+            border-radius: 50%
             overflow: hidden
-            +tablet-down()
-                -webkit-line-clamp: 5
 
-
-      .topic_bg
-          width: 240px
-          height: 240px
-          // border: 1px solid red;
-          position: relative
-          +tablet-down()
-              width: 150px
-              height: 150px
-              float: left
-              margin: 0 10px !important
-              -webkit-box-flex: 1
-          img
-              position: absolute
-              right: 0
-              z-index: 1
-              +tablet-down()
-                  width: 100%
-                  top: 8px
-
-
-.index-footer
-    box-sizing: border-box
-    max-width: 900px
-    width: 100%
-    margin: 30px auto
-    position: relative
-    padding-bottom: 50px
-    +tablet-down()
-        padding-bottom: 0
-        div
-            margin-left: 30px !important
-
-    .hold
-        color: #fff
-        margin-bottom: 8%
-        margin-left: 134px
-        +tablet-down()
-            margin-bottom: 5%
-
-        dt
-            font-size: 1.182rem
-            line-height: 2.7rem
-            +tablet-down()
-                font-size: 1.0125rem
-                line-height: 1.6875rem
-
-        dd
-            font-size: 0.92rem
-            line-height: 2.16rem
-            a
-                color: #fff
-
-            +tablet-down()
-                font-size: 0.7425rem;
-                line-height: 1.5188rem;
-
-        &.assist
-            dd
-                float: left
-                margin-right: 4.5%
-
-    .qrCode
-        position: absolute
-        right: 5%
-        top: 25%
-        +tablet-down()
-            width: 35%
-            padding-top: 8%
-            position: static
             img
+                height: 100%
                 width: 100%
+
+        &-text
+            position: absolute
+            bottom: 10px
+                
+        &-content
+            position: relative
+            flex: auto;
+            width: 50%
+            display: inline-block
+            padding: 10px 0 0 20px
+
+        h2 
+            color: $color-font
+            font-size: 30px
+            line-height: 40px
+
+        &-desc
+            color: $color-font
+            font-size: 20px
+            line-height: 26px
+            margin: 20px 0
+
+            +tablet-down()
+                display: none
+        
+        &-team,
+        &-author
+            color: rgba(255, 255, 255, 0.5)
+            font-size: 16px
+            line-height: 18px
+            font-weight: normal
+
+            +tablet-down()
+                line-height: 22px!important
+
+    .address
+        width: 100%
+        font-size: 0
+        line-height: 0
+        overflow: hidden
+
+        &__site
+            display: inline-block
+            background: url('../../img/address.png') no-repeat
+            width: 800px
+            height: 300px
+            background-size: 100% 100%
+            overflow: hidden
+
+            +tablet-down()
+                margin-top: 51px
+                width: 100%
+            
+
+        &__map
+            display: inline-block
+            background: url('../../img/map.png') no-repeat
+            width: 400px
+            height: 300px
+            background-size: 100% 100%
+            overflow: hidden
+
+            +tablet-down()
+                width: 100%
+
+
+    .discuss
+        position: relative
+        display: flex
+
+        +tablet-down()
+            display: block
+            padding-bottom: 250px!important
+
+        &__content
+            position: relative
+            flex: auto;
+            height: 460px;
+            
+            +tablet-down()
+                position: static
+                display: block
+                width: 100%
+                height: auto;
+        
+        &__title
+            color: $color-font
+            font-size: 40px
+            line-height: 50px
+
+            +tablet-down()
+                margin: 51px 0 34px 0
+        
+        &__desc
+            color: $color-font
+            line-height: 24px
+            font-size: 20px
+            margin-top: 20px;
+
+            +tablet-down()
+                margin-bottom: 50px
+
+        &__area
+            position: absolute
+            height: 200px
+            width: calc(100% - 40px);
+            bottom: 0
+            left: 0
+            text-align: right
+            color: $color-font
+            font-size: 16px
+            font-weight: normal
+            padding: 32px 48px
+            background-color: $color-red
+            z-index: $zIndex
+            box-sizing: border-box
+
+            +tablet-down()
+                bottom: 0
+                width: 450px!important
+
+
+        &__list
+            list-style: disc
+            float: right
+            clear: both
+            zoom: 1
+
+            li
+                list-style: disc
+
+                & + li
+                    margin-top: 15px
+                    text-align: left
+
+        &__square
+            position: absolute
+            z-index: $zIndex
+            right: 0
+            bottom: 200px
+            height: 40px
+            width: 40px
+            background-color: $color-red
+
+            +tablet-down()
+                left: 450px !important
+                right: auto !important
+            
+        &__preview
+            flex: 0 0 530px
+            padding-left: 70px
+            font-size: 0
+            line-height: 0
+
+            +tablet-down()
+                padding-left: 0 !important                
+
+            &-img
+                display: inline-block
+                width: 200px
+                height: 200px
+                border-radius: 50%
+                overflow: hidden
+                
+                +tablet-down()
+                    width: 1.55rem
+                    height: 1.55rem
+                    margin-right: 0 !important
+                    margin-bottom: 0 !important
+
+                +tablet-down()
+                    + .discuss__preview-img
+                        margin-left: 0.18rem !important
+
+                &:nth-child(1),
+                &:nth-child(2)
+                    margin-bottom: 60px
+
+                &:nth-child(1),
+                &:nth-child(3)
+                    margin-right: 60px
+                
+                &:nth-child(4)
+                    +tablet-down()
+                        margin-right: 0 !important
+                img
+                    width: 100%
+                    height: 100%
+
+    .about
+
+        &__header
+            display: flex
+        
+        .column-header 
+            flex: auto
+
+        &__desc
+            margin-top: 60px
+            color: $color-font
+            font-weight: normal
+            font-size: 20px
+            margin-bottom: 120px
+
+            +tablet-down()
+                margin-top: 51px!important
+                margin-bottom: 60px
+        
+        &__img 
+            flex: 0 0 0 140px
+            height: 140px
+            padding-left: 66px
+
+            +tablet-down()
+                display: none
+
+            img
+                margin-top: 180px
+                height: 140px
+                width: 140px

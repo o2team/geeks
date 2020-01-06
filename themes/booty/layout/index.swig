@@ -6,7 +6,6 @@
   {% include '_partial/index/head.swig' %}
    {% include '_partial/index/banner.swig' %}
    {% include '_partial/index/main.swig' %}
-   {% include '_partial/index/footer.swig' %}
 
 {% endblock %}
 
@@ -15,5 +14,6 @@
 {% endblock %}
 
 {% block pagejs %}
+{{ js('js/libs/rem.js') }}
 {{ js('js/index') }}
 {% endblock%}

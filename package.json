@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "build": "hexo g",
+    "dev": "hexo server",
     "deploy": "sh ./.travis/deploy.sh",
     "clean": "rm -rf public/js/libs && rm -rf public/js/mods"
   },
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.9.0"
   },
   "dependencies": {
     "cheerio": "^0.22.0",

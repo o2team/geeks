@@ -10,6 +10,9 @@
 {{ js('js/libs/jquery.hammer') }}
 {{ js('js/libs/jquery.animatecss') }}
 {{ js('js/libs/base64') }}
+{{ js('js/libs/swiper.min.js') }}
+{{ js('js/libs/particle-effect.js') }}
+{{ js('js/libs/effect.js') }}
 {{ js('js/mods/util') }}
 {{ js('js/mods/common') }}
 {{ js('js/mods/console') }}

@@ -1,7 +1,9 @@
+<canvas class='index-banner__effect' width="1680" height="500" ></canvas>
+<div class='index-banner__title'>本期主题</div>
 <section class="index-banner">
-    <div class="banner-title">
-        <p>第2季极客沙龙 - 前端体验主题交流会</p>
-        <p>时间：2016.12.28 （周三） 14:30~18:00</p>
-        <p>地址：南山区科技中一路大族大厦 7楼 D-717</p>
+    <div class="index-banner__box">
+        <h2>凹凸极客沙龙</h2>
+        <h3>本期主题</h3>
     </div>
+    <div class='index-banner__square'></div>
 </section>
