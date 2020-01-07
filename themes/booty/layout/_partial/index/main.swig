@@ -34,7 +34,7 @@
         <div class='discuss__area'>
           <ul class='discuss__list'>
             <li>李伟涛 | 京东·凹凸实验室团队</li>
-            <li>王   勇 | 京东·凹凸实验室团队</li>
+            <li>王&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勇 | 京东·凹凸实验室团队</li>
             <li>桂永红 | 京东·凹凸实验室团队</li>
             <li>胡俊文 | 京东·未知素团队</li>
           </ul>
@@ -95,7 +95,5 @@
         </div>
         <div class='about__img'><img src='img/qrcode.jpg'></img></div>
       </div>
-      
-      
     </div>
 </section>
