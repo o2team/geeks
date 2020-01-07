@@ -5,7 +5,14 @@ $color-red = #D0021B
 $color-font = #fff
 $zIndex = 10
 
-$margin: 5%
+$margin = 5%
+
+$line-height-mobile-lg = 0.5rem !important
+$font-size-mobile-lg = 0.48rem !important
+$font-size-mobile-normal = 0.34rem !important
+$font-size-mobile-content = 0.3rem !important
+$font-size-mobile-desc = 0.28rem !important
+$font-size-mobile-sm = 0.26rem !important
 
 body
     &.page-index
@@ -43,8 +50,6 @@ body
     width: 100%
     overflow-x: hidden
 
-#topic
-    margin-top: 10px!important
 
 .index-banner
     background: url("../../img/banner.png") no-repeat
@@ -164,7 +169,7 @@ body
                 margin: 0 auto
                 margin-left: 5%!important
                 margin-right: 5%!important
-                margin-top: 100px
+                margin-top: 1rem
                 width: 90% !important
                 box-sizing: border-box
 
@@ -173,12 +178,19 @@ body
                 color: $color-font
                 font-weight: bold
                 font-size: 50px
+
+                +tablet-down()
+                    font-size: $font-size-mobile-lg
+                    line-height: $font-size-mobile-lg
             
             h3
                 color: $color-font
                 font-weight: normal
                 font-size: 26px
                 line-height: 48px
+                
+                +tablet-down()
+                    font-size: $font-size-mobile-normal
 
     ul.column-container
         overflow: hidden
@@ -194,6 +206,9 @@ body
         margin-bottom: 80px
         overflow: hidden
         
+        +tablet-down()
+            margin-bottom: 0.4rem !important
+
         &:last-child
             margin-bottom: 0!important
 
@@ -231,7 +246,7 @@ body
             line-height: 40px
 
             +tablet-down()
-                line-height: 0.3rem !important
+                line-height: 0.33rem !important
                 font-size: 0.3rem !important
 
         &-desc
@@ -310,7 +325,8 @@ body
             line-height: 50px
 
             +tablet-down()
-                margin: 51px 0 34px 0
+                font-size: $font-size-mobile-normal
+                margin: 0.3rem 0 0.3rem 0
         
         &__desc
             color: $color-font
@@ -319,6 +335,7 @@ body
             margin-top: 20px;
 
             +tablet-down()
+                font-size: $font-size-mobile-sm
                 margin-bottom: 50px
 
         &__area
@@ -338,8 +355,9 @@ body
 
             +tablet-down()
                 bottom: 0
+                padding: 0.3rem!important
                 width: 6rem!important
-
+                height: 2.6rem!important
 
         &__list
             list-style: disc
@@ -350,8 +368,10 @@ body
             li
                 list-style: disc
 
+                +tablet-down()
+                    font-size: $font-size-mobile-desc
                 & + li
-                    margin-top: 15px
+                    margin-top: 0.15rem
                     text-align: left
 
         &__square
@@ -365,6 +385,7 @@ body
 
             +tablet-down()
                 left: 6rem!important
+                bottom: 2.6rem!important
                 right: auto !important
             
         &__preview
@@ -425,6 +446,7 @@ body
 
             +tablet-down()
                 margin-top: 51px!important
+                font-size: $font-size-mobile-desc
                 margin-bottom: 60px
         
         &__img 
@@ -439,3 +461,7 @@ body
                 margin-top: 180px
                 height: 140px
                 width: 140px
+
+.swiper-cover
+    +tablet-down()
+        height: 3.5rem !important
