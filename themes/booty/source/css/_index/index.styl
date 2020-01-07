@@ -43,6 +43,9 @@ body
     width: 100%
     overflow-x: hidden
 
+#topic
+    margin-top: 10px!important
+
 .index-banner
     background: url("../../img/banner.png") no-repeat
     background-size: contain
@@ -67,6 +70,11 @@ body
             display: none!important
 
         &__title
+            font-size: 0.3rem !important
+            width: auto !important
+            height: 0.5rem !important
+            padding: 0 0.3rem !important
+            line-height: 0.5rem !important
             display: block!important
 
     &__box
@@ -130,6 +138,7 @@ body
 
         +tablet-down()
             top: -120px
+            display: none
 
 .index-main
     max-width: 1200px
@@ -196,6 +205,11 @@ body
             border-radius: 50%
             overflow: hidden
 
+            +tablet-down()
+                flex: 0 0 1.6rem !important
+                width: 1.6rem!important
+                height: 1.6rem!important
+
             img
                 height: 100%
                 width: 100%
@@ -216,6 +230,10 @@ body
             font-size: 30px
             line-height: 40px
 
+            +tablet-down()
+                line-height: 0.3rem !important
+                font-size: 0.3rem !important
+
         &-desc
             color: $color-font
             font-size: 20px
@@ -233,7 +251,8 @@ body
             font-weight: normal
 
             +tablet-down()
-                line-height: 22px!important
+                line-height: 0.25rem !important
+                font-size: 0.25rem !important
 
     .address
         width: 100%
@@ -319,7 +338,7 @@ body
 
             +tablet-down()
                 bottom: 0
-                width: 450px!important
+                width: 6rem!important
 
 
         &__list
@@ -345,7 +364,7 @@ body
             background-color: $color-red
 
             +tablet-down()
-                left: 450px !important
+                left: 6rem!important
                 right: auto !important
             
         &__preview
