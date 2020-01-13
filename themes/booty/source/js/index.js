@@ -38,9 +38,6 @@
     });
 
     /* 粒子动效 */
-    window.onresize = function () {
-        initEffect(document.querySelector('.index-banner__effect'));
-    }
     initEffect(document.querySelector('.index-banner__effect'));
     
 })(jQuery, App, Swiper);

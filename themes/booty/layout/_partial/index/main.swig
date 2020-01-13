@@ -64,7 +64,7 @@
       <div class='address__site'></div>
       <div class='address__map'></div>
     </div>
-
+    <!--
     <div class='column-header' id='review'>
       <h2>REVIEW</h2>
       <h3>往期回顾</h3>
@@ -83,7 +83,7 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-
+    -->
     <div class='about'>
       <div class='about__header'>
         <div>

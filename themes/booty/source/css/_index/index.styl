@@ -4,6 +4,7 @@ $color-bg-header = rgba(0,0,0,1)
 $color-red = #D0021B
 $color-font = #fff
 $zIndex = 10
+$zIndex-bg = 9
 
 $margin = 5%
 
@@ -40,8 +41,16 @@ body
         font-weight: normal
         transition: all 0.5s
 
+        & + a
+            margin-left: 40px
+
         &:last-child
-            padding: 3px 16px
+            display: inline-block
+            height: 30px
+            width: 80px
+            line-height: 30px
+            font-weight: bold
+            text-align: center
             background-color: $color-red
 
         &:hover
@@ -53,23 +62,36 @@ body
 
 
 .index-banner
-    background: url("../../img/banner.png") no-repeat
-    background-size: contain
     max-width: 1000px
     margin: 0 auto;
     margin-top: 48px;
     margin-bottom: 130px;
     width: 90%;
-    border-radius: 10px
     color: $color-font
     position: relative
     height: 500px
 
+    &__bg
+        position: absolute
+        left: 60px
+        background: url("../../img/banner.png") no-repeat
+        background-size: contain
+        width: 1000px
+        height: 500px
+        margin: 0 auto;
+        border-radius: 10px
+        z-index: $zIndex-bg
+
     +tablet-down()
-        width: 6.5rem!important
         margin-top: 29px
         margin-bottom: 20px!important
+        width: 6.5rem!important
         height: 3.25rem!important
+
+        &__bg
+            left: 0;
+            width: 6.5rem!important
+            height: 3.25rem!important
 
         &__box,
         &__square
@@ -86,7 +108,7 @@ body
     &__box
         display: inline-block
         position: absolute
-        left: -120px
+        left: -60px
         top: 80px
         height: 300px
         padding-top: 40px;
@@ -133,13 +155,12 @@ body
         z-index: $zIndex
         background-color: $color-red
         top: 380px;
-        left: -160px;
+        left: -100px;
 
     &__effect
         position: absolute
         left: 0
         top: 200px
-        filter: blur(1px)
         z-index: -1
 
         +tablet-down()
@@ -194,10 +215,6 @@ body
                 +tablet-down()
                     font-size: $font-size-mobile-normal
 
-    ul.column-container
-        overflow: hidden
-        padding-top: 51px
-
     .topic
         display: flex
         list-style: none
@@ -233,20 +250,17 @@ body
 
         &-text
             position: absolute
-            bottom: 10px
-
-            +tablet-down()
-                bottom: 0!important
+            bottom: 0
                 
         &-content
             position: relative
             flex: auto;
             width: 50%
             display: inline-block
-            padding: 10px 0 0 20px
+            padding-left: 60px
 
             +tablet-down()
-                padding-top: 0.08rem!important
+                padding-left: 0.5rem
 
         h2 
             color: $color-font
@@ -254,14 +268,15 @@ body
             line-height: 1.5
 
             +tablet-down()
-                line-height: 1.5 !important
+                line-height: 1.4 !important
                 font-size: 0.3rem !important
 
         &-desc
             color: $color-font
             font-size: 20px
             line-height: 26px
-            margin: 20px 0
+            font-weight: normal
+            margin: 10px 0
 
             +tablet-down()
                 display: none
@@ -270,11 +285,11 @@ body
         &-author
             color: rgba(255, 255, 255, 0.5)
             font-size: 16px
-            line-height: 18px
+            line-height: 22px
             font-weight: normal
 
             +tablet-down()
-                line-height: 0.25rem !important
+                line-height: 1.4 !important
                 font-size: 0.25rem !important
 
     .address
@@ -284,12 +299,23 @@ body
         overflow: hidden
 
         &__site
+            position: relative
             display: inline-block
             background: url('../../img/address.png') no-repeat
             width: 800px
             height: 300px
             background-size: 100% 100%
             overflow: hidden
+
+            &::after
+                content: " "
+                display: block
+                position: absolute
+                height: 100%;
+                width: 100%
+                background: rgba(208,2,27,1)
+                opacity: 0.12
+                z-index: $zIndex-bg
 
             +tablet-down()
                 width: 100%
@@ -340,7 +366,7 @@ body
         
         &__desc
             color: $color-font
-            line-height: 24px
+            line-height: 28px
             font-size: 20px
             font-weight: normal
             margin-top: 20px;
