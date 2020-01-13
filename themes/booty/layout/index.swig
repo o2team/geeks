@@ -14,6 +14,5 @@
 {% endblock %}
 
 {% block pagejs %}
-{{ js('js/libs/rem.js') }}
 {{ js('js/index') }}
 {% endblock%}
