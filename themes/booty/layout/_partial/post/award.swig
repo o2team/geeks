@@ -4,12 +4,12 @@
 </div>
 <div class='award column-container'>
     <div class='award__list'>
-        {% for prize in post.award %}
+        {% for award in post.award %}
         <div class='award__item'>
-            <img class='award__image' src={{ prize.image }} />
+            <img class='award__image' src={{ award.image }} />
             <p class='award__content'>
-                <span class='award__type'># {{ prize.type }} #</span>
-                <span class='award__name'>{{ prize.name }}</span>
+                <span class='award__type'># {{ award.type }} #</span>
+                <span class='award__name'>{{ award.name }}</span>
             </p>
         </div>
         {% endfor %}
