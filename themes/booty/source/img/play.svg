@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>编组 7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网" transform="translate(-1336.000000, -2433.000000)">
+            <g id="会议地址" transform="translate(360.000000, 2185.000000)">
+                <g id="编组-7" transform="translate(978.000000, 250.000000)">
+                    <circle id="椭圆形" stroke="#FFFFFF" stroke-width="4" cx="30" cy="30" r="30"></circle>
+                    <polygon id="多边形" fill="#FFFFFF" transform="translate(34.000000, 30.000000) rotate(90.000000) translate(-34.000000, -30.000000) " points="34 16 48 44 20 44"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
