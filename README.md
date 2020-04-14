@@ -1,6 +1,7 @@
 # 『凹凸极客沙龙』Geek Talks
 
 ### Season 2 - 『大咖面对面』
+![Season 2](//img20.360buyimg.com/ling/jfs/t1/101362/17/18492/1231476/5e948454E977d637e/afaf150d0e899628.jpg)
 
 > 时间：2020年04月17日 & 2020年04月24日
 
@@ -16,6 +17,7 @@
 更多信息请猛击：https://geeks.aotu.io/vol-02/
 
 ### Season 1 - 『术业有专攻』
+![Season 1](//img10.360buyimg.com/ling/jfs/t1/103493/19/18300/140065/5e9351c7E641bef87/fe61fe0802ab9729.png)
 
 > 时间：2020年01月13日
 
