@@ -11,7 +11,3 @@
 {% block footer %}
     {% parent %}
 {% endblock %}
-
-{% block pagejs %}
-{{ js('js/index') }}
-{% endblock%}

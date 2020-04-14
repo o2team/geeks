@@ -14,6 +14,6 @@
     </div>
 </div>
 <div class="foot">
-    <p>Copyright © 2017. All Rights Reserved.</p>
+    <p>Copyright © 2020. All Rights Reserved.</p>
     <p>粤ICP备15077732号-2</p>
 </div>

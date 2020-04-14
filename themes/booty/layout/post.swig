@@ -1,6 +1,6 @@
 {% extends '_layout.swig' %}
 
-{% block page_class %}slideshow{% endblock %}
+{% block page_class %}page-full page-index{% endblock %}
 
 {% block prebody %}
 <svg class="hidden">
@@ -30,6 +30,29 @@
 {% endblock %}
 
 {% block main %}
-{% set author = page.author|default({github_name:config.github.user, nick:config.author}) %}
-{{ partial('_partial/post/main', {post: page, author: author}) }}
+{{ partial('_partial/post/head', {post: page}) }}
+{{ partial('_partial/post/banner', {post: page}) }}
+<section class="index-main">
+    {{ partial('_partial/post/topic', {post: page}) }}
+    {% if page.discuss %}
+    {{ partial('_partial/post/discuss', {post: page}) }}
+    {% endif %}
+    {% if page.award %}
+    {{ partial('_partial/post/award', {post: page}) }}
+    {% endif %}
+    {% if page.live %}
+    {{ partial('_partial/post/live', {post: page}) }}
+    {% endif %}
+    {% if page.address %}
+    {{ partial('_partial/post/address', {post: page}) }}
+    {% endif %}
+    {% if page.review %}
+    {{ partial('_partial/post/review', {page: page}) }}
+    {% endif %}
+    {{ partial('_partial/post/about', {post: page}) }}
+</section>
 {% endblock %}
+
+{% block pagejs %}
+{{ js('js/index') }}
+{% endblock%}

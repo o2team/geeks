@@ -10,11 +10,13 @@
         padding: 0 0 50px
 
 .evt-list
+    margin-right: -10px
     a
         color: #000
 
 .post
     margin-top: 25px
+    padding-right: 10px
     box-sizing: border-box
     width: 50%
     float: left
@@ -38,12 +40,9 @@
                 font-size: 18px !important
 
         .post-cover
-            height: 440px
             a
                 display: block
                 z-index: 10
-            +tablet-down()
-                height: 200px
 
         .post-tit
             font-size: 22px
@@ -59,7 +58,6 @@
         display: block
         position: relative
         margin-bottom: 20px
-        height: 236px
         transition: all .2s ease-out
         &:hover
             .post-ovl

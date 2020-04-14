@@ -19,7 +19,8 @@ timezone: Asia/Shanghai
 # If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://geeks.aotu.io
 root: /
-permalink: notes/:year/:month/:day/:title/
+permalink: :title/
+# permalink: notes/:year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
