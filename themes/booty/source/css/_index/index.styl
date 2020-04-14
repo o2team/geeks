@@ -306,21 +306,15 @@ body
             float: left
             width: 30px
             height: 30px
-            border: 1px solid #fff
-            border-radius: 50%
             margin: 8px 12px 0 0
             transition: all 0.5s
-            &:after {
-                content: ''
-                position: absolute
-                width: 0
-                height: 0
-                border: solid
-                border-width: 7px 0 7px 10px
-                border-color: transparent transparent transparent #fff
-                top: 7px
-                left: 11px
-                transition: all 0.5s
+            background: url(../../img/play.svg) no-repeat
+            background-size:  100%
+
+            +tablet-down() {
+                width: 0.3rem !important
+                height: 0.3rem !important
+                margin: 0.05rem 0.1rem 0 0
             }
         }
 
