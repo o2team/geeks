@@ -2,6 +2,8 @@
 
 ### Season 2 - 『大咖面对面』
 
+![afaf150d0e899628.jpg](https://i.loli.net/2020/04/14/14DLwEpqG6eK8lz.jpg)
+
 > 时间：2020年04月17日 & 2020年04月24日
 
 > 直播：Bilibili、虎牙、抖音
