@@ -35,7 +35,7 @@
     "lunr": "github:codepiano/lunr.js.git"
   },
   "devDependencies": {
-    "eslint": "^3.12.2",
+    "eslint": "^6.8.0",
     "eslint-config-defaults": "^9.0.0",
     "js-yaml": "^3.7.0"
   },
